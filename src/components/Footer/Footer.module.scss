@@ -1,0 +1,80 @@
+@use "/src/styles/layout.scss";
+
+.footerWrapper {
+  padding: 61px 0 53px;
+  @include layout.smallTablet {
+    padding: 29px 0;
+  }
+  .footerRightMenu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+    @include layout.desktopSmall {
+      padding-right: 0;
+    }
+    @include layout.smallTablet {
+      justify-content: center;
+    }
+    .footerLogo {
+      img {
+        max-width: 188px;
+      }
+    }
+  }
+  .footerMenuTitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135.5%;
+    letter-spacing: -0.8px;
+    margin: 15px 0 13px;
+  }
+  a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: -0.64px;
+  }
+  .SocialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include layout.smallTablet {
+      justify-content: center;
+      padding: 24px 0;
+    }
+    li {
+      margin: 0 4px;
+    }
+  }
+  .copyrightWrapper {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    max-width: 176px;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 30px;
+    @include layout.smallTablet {
+      max-width: 100%;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 0;
+    }
+  }
+  @include layout.smallTablet {
+    .FooterLegalCol,
+    .FooterSiteCol {
+      display: none;
+    }
+    .colSm8,
+    .colSm4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}

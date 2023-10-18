@@ -1,0 +1,41 @@
+@use "./variables.scss";
+
+html,
+body {
+  font-family: variables.$SpaceGroteskLight;
+}
+
+@font-face {
+  font-family: variables.$SportyProRegular;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/SportyPro-Regular.otf") format("OpenType");
+}
+
+@font-face {
+  font-family: variables.$SpaceGroteskLight;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SpaceGrotesk-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: variables.$SpaceGroteskRegular;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: variables.$SpaceGroteskSemiBold;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/SpaceGrotesk-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: variables.$SpaceGroteskBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+}

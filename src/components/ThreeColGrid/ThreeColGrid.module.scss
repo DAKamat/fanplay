@@ -1,0 +1,50 @@
+@use "/src/styles/layout.scss";
+.ThreeColGridWrapper {
+  margin-top: 52px;
+  h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135.5%;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px;
+    @include layout.desktopLarge {
+      font-size: 28px;
+    }
+  }
+  p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170.5%;
+    letter-spacing: -0.48px;
+    @include layout.desktopLarge {
+      font-size: 24px;
+    }
+  }
+  .ThreeColGridCol:nth-of-type(1) h3 {
+    max-width: 150px;
+    @include layout.desktopLarge {
+      max-width: 100%;
+    }
+  }
+  .ThreeColGridCol:nth-of-type(2) h3 {
+    max-width: 150px;
+    @include layout.desktopLarge {
+      max-width: 100%;
+    }
+  }
+  .ThreeColGridCol:nth-of-type(3) h3 {
+    max-width: 176px;
+    @include layout.desktopLarge {
+      max-width: 100%;
+    }
+  }
+  @include layout.tablet {
+    .ThreeColGridCol {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+}

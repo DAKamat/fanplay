@@ -1,0 +1,18 @@
+.buttonWrapper {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.primaryBtn {
+  display: flex;
+  height: 56px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.96px;
+}

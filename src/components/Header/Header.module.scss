@@ -1,0 +1,13 @@
+.headerWrapper {
+  background: transparent;
+  padding: 33px 72px;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  .headerRow {
+    align-items: center;
+    img {
+      max-width: 188px;
+    }
+  }
+}

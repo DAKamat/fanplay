@@ -1,0 +1,41 @@
+@use "./variables.scss";
+
+@mixin small {
+  @media screen and (max-width: variables.$screen-small-max) {
+    @content;
+  }
+}
+
+//mobile device
+@mixin mobile {
+  @media screen and (max-width: variables.$screen-mobile-max) {
+    @content;
+  }
+}
+// tablets
+@mixin tablet {
+  @media screen and (max-width: variables.$screen-tablet-max) {
+    @content;
+  }
+}
+
+// min-tablet
+@mixin smallTablet {
+  @media screen and (max-width: variables.$screen-tablet-min) {
+    @content;
+  }
+}
+
+// desktopSmall
+@mixin desktopSmall {
+  @media screen and (max-width: variables.$screen-desktop-small) {
+    @content;
+  }
+}
+
+// desktopSmall
+@mixin desktopLarge {
+  @media screen and (min-width: variables.$screen-desktop-large) {
+    @content;
+  }
+}
