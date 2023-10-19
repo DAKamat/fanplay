@@ -1,5 +1,9 @@
+@use "/src/styles/layout.scss";
 .FullWidthImage {
   padding-top: 50px;
+  @include layout.mobile {
+    padding-top: 20px;
+  }
   img {
     width: 100%;
     height: auto;

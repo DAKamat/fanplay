@@ -1,3 +1,4 @@
+@use "/src/styles/layout.scss";
 .buttonWrapper {
   width: fit-content;
   margin-left: auto;
@@ -15,4 +16,13 @@
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.96px;
+  @include layout.mobile {
+    height: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.64px;
+    padding: 16px 12px;
+  }
 }

@@ -8,11 +8,20 @@ import imageMobile from "/src/images/FullWidthImage/FullWidthImageMobile.png";
 export const FullWidthImage = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    window.addEventListener("resize", () => {
+    const handleResize = () => {
       if (window.innerWidth < 767) {
         setIsMobile(true);
       } else setIsMobile(false);
-    });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
     if (window.innerWidth < 767) {
       setIsMobile(true);
     } else setIsMobile(false);

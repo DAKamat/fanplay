@@ -1,7 +1,9 @@
-import navImage from "/src/images/Logos/fanplayLogo.svg";
+import Logo from "/src/images/Logos/fanplayLogo.svg";
+import MobileLogo from "/src/images/Logos/mobileFanplayLogo.svg";
 
 export const navData = {
-  navImage: navImage,
+  Logo: Logo,
+  MobileLogo: MobileLogo,
   BtnText: "Partner Inquiry",
   BtnLink: "#",
 };

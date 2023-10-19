@@ -39,3 +39,10 @@
     @content;
   }
 }
+
+// desktopSmall
+@mixin mobileLandscape {
+  @media screen and (max-width: variables.$screen-tablet-min) and (orientation: landscape) {
+    @content;
+  }
+}

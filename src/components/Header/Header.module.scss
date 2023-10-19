@@ -1,13 +1,30 @@
+@use "/src/styles/layout.scss";
 .headerWrapper {
   background: transparent;
   padding: 33px 72px;
   position: absolute;
   width: 100%;
   z-index: 9;
+  @include layout.mobile {
+    padding: 12px 0;
+  }
   .headerRow {
     align-items: center;
+    @include layout.mobile {
+      margin: 0;
+    }
     img {
       max-width: 188px;
+      @include layout.mobile {
+        max-width: 29px;
+      }
+    }
+    .headerContainercol {
+      @include layout.mobile {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
     }
   }
 }

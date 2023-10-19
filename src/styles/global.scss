@@ -50,6 +50,11 @@ h1 {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -1.92px;
+    text-align: center;
+  }
+  @include layout.small {
+    font-size: 37px;
+    line-height: 40px;
   }
 }
 h2 {
@@ -63,9 +68,13 @@ h2 {
     font-size: 70px;
   }
   @include layout.mobile {
-    font-size: 64px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 46px;
     letter-spacing: -2.56px;
+  }
+  @include layout.small {
+    font-size: 34px;
+    line-height: 38px;
   }
 }
 
@@ -149,6 +158,10 @@ p {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  @include layout.mobile {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -208,7 +221,7 @@ p {
   padding-left: 15px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 767px) {
   .col-sm-1 {
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
